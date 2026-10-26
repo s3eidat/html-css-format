@@ -1,0 +1,15 @@
+.hc-grid { align-items: start; }
+#input { min-height: 380px; }
+.hc-opts { align-items: flex-end; gap: 14px; }
+.hc-opts label.field { width: 150px; }
+.hc-opts .check { min-height: 40px; }
+.hc-out { min-height: 380px; max-height: 620px; overflow: auto; white-space: pre; word-break: normal; tab-size: 4; }
+#input, .hc-out { font-variant-ligatures: none; font-feature-settings: "liga" 0, "calt" 0; }
+.hc-t { color: var(--accent); }
+.hc-a { color: #c4b5fd; }
+.hc-v { color: #f5c26b; }
+.hc-c { color: var(--text-3); font-style: italic; }
+.hc-d { color: #f0a0d0; }
+[data-theme="light"] .hc-a { color: #6d28d9; }
+[data-theme="light"] .hc-v { color: #a35d00; }
+[data-theme="light"] .hc-d { color: #b0127a; }

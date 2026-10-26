@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; media-src 'self' data: blob:; connect-src 'self' data: blob:; worker-src 'self' blob:; manifest-src 'self'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<title>HTML CSS Format — Free HTML &amp; CSS Beautifier and Minifier | S3eidat Tools</title>
+<meta name="description" content="Beautify or minify HTML and CSS in your browser. Keeps pre, textarea, script and style contents intact, knows void elements, keeps strings and url() in CSS. Shows bytes saved. Free, private, nothing uploaded.">
+<meta property="og:title" content="HTML CSS Format — free, private beautifier &amp; minifier">
+<meta property="og:description" content="Beautify or minify HTML and CSS. Runs 100% in your browser.">
+<link rel="icon" href="kit/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="kit/kit.css">
+<link rel="stylesheet" href="app.css">
+<script src="kit/kit.js"></script>
+<!--s3:seo-->
+<link rel="canonical" href="https://s3eidat.github.io/html-css-format/">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0d0f12">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="S3eidat Tools">
+<meta property="og:url" content="https://s3eidat.github.io/html-css-format/">
+<meta property="og:image" content="https://s3eidat.github.io/html-css-format/screenshot.png">
+<meta property="og:image:width" content="1280"><meta property="og:image:height" content="800">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HTML CSS Format — Beautify or minify HTML and CSS">
+<meta name="twitter:description" content="Beautify or minify HTML and CSS. Free, private and runs 100% in your browser: no sign-up, no uploads.">
+<meta name="twitter:image" content="https://s3eidat.github.io/html-css-format/screenshot.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "HTML CSS Format", "url": "https://s3eidat.github.io/html-css-format/", "description": "Beautify or minify HTML and CSS. Free, private and runs 100% in your browser: no sign-up, no uploads.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (web browser)", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "image": "https://s3eidat.github.io/html-css-format/screenshot.png", "author": {"@type": "Person", "name": "s3eidat", "url": "https://github.com/s3eidat"}}</script>
+<!--/s3:seo-->
+</head>
+<body data-tool="html-css-format">
+<main class="s3-main">
+  <section class="s3-hero">
+    <h1>HTML CSS Format</h1>
+    <p>Beautify or minify HTML and CSS. The result is shown as highlighted code, never rendered, and nothing leaves your browser.</p>
+  </section>
+
+  <div class="grid-2 hc-grid">
+    <section class="card stack">
+      <div class="row between">
+        <div class="seg" id="lang" role="group" aria-label="Language">
+          <button aria-pressed="true" data-v="html">HTML</button>
+          <button aria-pressed="false" data-v="css">CSS</button>
+        </div>
+        <div class="row">
+          <button class="btn ghost small" id="sample">Sample</button>
+          <label class="btn ghost small" id="open">Open file<input type="file" accept=".html,.htm,.css,.svg,.xml,.txt,text/html,text/css,text/plain" hidden></label>
+          <button class="btn ghost small" id="clear">Clear</button>
+        </div>
+      </div>
+      <label class="field"><span class="sr">Code input</span>
+        <textarea class="textarea" id="input" spellcheck="false" placeholder="Paste HTML or CSS here"></textarea>
+      </label>
+      <div class="row hc-opts">
+        <label class="field">Indent
+          <select class="select" id="indent">
+            <option value="2">2 spaces</option>
+            <option value="4">4 spaces</option>
+            <option value="tab">Tab</option>
+          </select>
+        </label>
+        <label class="check"><input type="checkbox" id="nocom"> Remove comments</label>
+      </div>
+      <div class="row">
+        <button class="btn primary" id="beautify">Beautify</button>
+        <button class="btn" id="minify">Minify</button>
+        <span class="grow"></span>
+        <span class="chip" id="status">Waiting for code</span>
+      </div>
+    </section>
+
+    <section class="card stack">
+      <div class="row between">
+        <h2>Output</h2>
+        <div class="row">
+          <button class="btn small" id="copy"><svg class="i"><use href="#i-copy"/></svg>Copy</button>
+          <button class="btn small" id="save"><svg class="i"><use href="#i-download"/></svg><span id="ext">.html</span></button>
+        </div>
+      </div>
+      <pre class="out hc-out" id="out" tabindex="0"></pre>
+      <div class="stats" id="stats"></div>
+    </section>
+  </div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
